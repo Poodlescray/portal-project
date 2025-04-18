@@ -95,5 +95,3 @@ spring.datasource.password=your_password
 ---
 
 ## Done!
-
-Open your browser at `http://localhost:4200` to use the portal!
