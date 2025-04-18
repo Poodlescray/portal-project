@@ -1,0 +1,109 @@
+/* Overall container spacing */
+h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #333;
+    font-size: 28px;
+  }
+  
+  /* New Folder input */
+  .new-folder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    margin-bottom: 1.5em;
+  }
+  
+  .new-folder input[type="text"] {
+    padding: 0.5em;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .new-folder button {
+    padding: 0.5em 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .new-folder button:hover {
+    background-color: #45a049;
+  }
+  
+  
+  .folder-block {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 1em auto;
+    max-width: 600px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #e3f2fd, #f1f8e9);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .folder-block h3 {
+    margin-top: 0;
+    color: #1976d2;
+    font-size: 20px;
+  }
+  
+  /* File input & button */
+  .folder-block input[type="file"] {
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+  }
+  
+  .folder-block button {
+    margin-top: 0.5em;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.4em 0.8em;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .folder-block button:hover {
+    background-color: #1976d2;
+  }
+  
+  /* Document list */
+  .folder-block ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1em;
+  }
+  
+  .folder-block li {
+    background-color: #ffffff;
+    padding: 0.75em;
+    border: 1px solid #eee;
+    margin-bottom: 0.5em;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+  
+  .folder-block a {
+    color: #0d47a1;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .folder-block a:hover {
+    text-decoration: underline;
+  }
+  
+  .folder-block p {
+    color: #888;
+    font-style: italic;
+    margin-top: 0.5em;
+  }
+  

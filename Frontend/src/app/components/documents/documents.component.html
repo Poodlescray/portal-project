@@ -1,0 +1,28 @@
+<h2>Documents</h2>
+
+<div class="new-folder">
+  <input type="text" [(ngModel)]="newFolderName" placeholder="Enter folder name" />
+  <button (click)="createFolder()">Create Folder</button>
+</div>
+
+<hr />
+
+
+<div *ngFor="let folder of folders" class="folder-block">
+  <h3>{{ folder.name }}</h3>
+
+  <input type="file" accept=".pdf,.doc,.docx,.html,.htm,.txt" (change)="onFileSelected($event, folder.id)" />
+  <button (click)="upload(folder.id)">Upload</button>
+
+  <ul *ngIf="folder.documents && folder.documents.length > 0; else emptyFolder">
+    <li *ngFor="let doc of folder.documents">
+      <strong>{{ doc.name }}</strong> - {{ doc.type }}
+      <br />
+      <a [href]="'http://localhost:8080/' + doc.url" target="_blank">View</a>
+    </li>
+  </ul>
+
+  <ng-template #emptyFolder>
+    <p>No documents in this folder.</p>
+  </ng-template>
+</div>
